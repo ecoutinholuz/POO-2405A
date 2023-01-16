@@ -1,1 +1,54 @@
+//POO - Programaçao Orientada a Objetos - Simular coisas da realidade na programacao
+   //
+   //Objetos - possui Estados(nome, idade, endereço, altura etc), comportmentos(andar, correr, dormir, etc)
+   //a POO é dividido:
+   //classes - Sao modelos que servem para consytuçao de objetos derivados dele mesmo(ex. Classe pessoal)
+   //as casses recebem atributos(os Estados)
+   //
+   //metodos - sera as instancias da classe, as formas de agir
+   //
+   //estrutura de uma classe :
+   //  class Nome(){ocorridos de um objeto}
+   //  
+   /*
+   var ricardo = Pessoa() //instanciando um objeto
+   ricardo.nome = "Ricardo Silva Silva"
+   ricardo.altura = 2.15
+   ricardo.corDosOlhos = "vermelho"
+   ricardo.peso = 100.0
+   println(ricardo.altura) // para exibir um atributo em especifico
+   */
+    //exercicio: criem um churrasco e exib a lista de covidados no console, no minimo 6 pessoas 
+    
+  val convidado1 = Pessoa("Claudio", 1.79, "castanhos", 183.0)
+   println(convidado1.peso)
+   
+  val convidado2 = Pessoa("Juliana", 1.50, "azul", 53.5)
+  println(convidado1.nome)
+  
+  val convidado3 = Pessoa("Marizete", 1.64, "pretos", 76.0)
+  println(convidado1.altura)
+  
+  val convidado4 = Pessoa("Vittor", 1.74, "castanho", 57.0)
+  println(convidado1.corDosOlhos)
+  
+  val convidado5 = Pessoa("Silvana", 1.10, "verde", 64.0)
+  println(convidado1.peso)
+  
+  val convidado6 = Pessoa("Joao", 1.50, "castanho", 69.4)
+   println(convidado1.peso) 
+    
+}
 
+class Pessoa(val nome: String,
+              val altura: Double,
+              val corDosOlhos: String, 
+              val peso: Double){
+    //declarando atributos para a classe
+    /*
+    var nome = ""
+    var altura = 0.0
+    var corDosOlhos = ""
+    var peso = 0.0
+    */
+    
