@@ -52,3 +52,71 @@ class Pessoa(val nome: String,
     var peso = 0.0
     */
     
+fun main() {
+  /*
+    var camaleao = Animal ("réptil",'M', "Madagascar",
+                           "Carnívoro",7, true)
+    //print("Meu Camaleão é um "+camaleao.classe+", ele é "+ camaleao.dieta+" e ele mora no "+camaleao.habitat)
+    camaleao.Dormir(false)
+    */
+   val contaCorrente = ContaNoBanco(4002, 8922.00, "Safra",
+                                    "Franco Francescco Aguero") 
+   contaCorrente.consultarSaldo()
+    
+    
+}
+class Pessoa(val nome: String,
+             val altura: Double,
+            val corDosOlhos: String,
+            val peso: Double){
+    //declarando atributos para a classe
+    /*
+    var nome = ""
+    var altura = 0.0
+    var corDosOlhos = ""
+    var peso = 0.0
+    */
+}
+class Animal(val classe: String, val genero: Char, val habitat: String,
+            val dieta: String, val idade: Int, val voa: Boolean){
+    
+    fun Atacar(bravo: Boolean){
+        if(bravo == true){
+            println("Animal atacando")
+        }else{
+            println("Animal de boa, suavao")
+        }
+    }
+    //exercicio: Faça um novo comportamento para o seu animal usando uma nova fun
+    
+    fun Dormir(sono: Boolean){
+        if(sono == true){
+            println("Animal a mimir")
+        }else{
+            println("Animal acordado")
+        }
+    }
+    fun Comer(fome: Boolean){
+        if(fome == true){
+            println("Animal se alimentando")
+        }else{
+            println("Animal cheio")
+        }
+    }
+}
+//Métodos - Comportamentos da nossa classe, que os nossos receberão
+//eles são declarados usando funções
+   
+class ContaNoBanco(var senha: Int, var saldo : Double, 
+                   var banco: String, var dono: String,
+                  ){
+    fun consultarSaldo(){
+        println("o saldo da sua conta é R$$saldo")
+    }
+    
+    
+    
+}
+
+
+
